@@ -1,0 +1,11 @@
+h2. Data Binding
+
+The plugin adds binding support for the following types:
+
+* Year
+* YearMonth
+* LocalTime
+* LocalDate
+* LocalDateTime
+* Instant
+* ZonedDateTime

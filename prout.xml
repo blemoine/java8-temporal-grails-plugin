@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <entry key="temporal">
+        <entry key="instant">2013-02-03T14:32:12Z</entry>
+        <entry key="year">2013</entry>
+        <entry key="yearMonth">2013-02</entry>
+        <entry key="localDate">2013-02-03</entry>
+        <entry key="localTime">14:32:12</entry>
+        <entry key="localDateTime">2013-02-03T14:32:12</entry>
+        <entry key="zonedDateTime">2013-02-03T14:32:12Z</entry>
+    </entry>
+</map>

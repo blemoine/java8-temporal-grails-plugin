@@ -1,0 +1,12 @@
+h2. JSON and XML Rendering
+
+The plugin registers JSON and XML converters for:
+
+* Year
+* YearMonth
+* LocalTime
+* LocalDate
+* LocalDateTime
+* Instant
+* ZonedDateTime
+
