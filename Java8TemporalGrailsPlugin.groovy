@@ -30,18 +30,17 @@ Plugin for supporting the new Java 8 Date and Temporal API :
 
     // URL to the plugin's documentation
     //TODO branche Gh-pages sur github
-    def documentation = "http://grails.org/plugin/java8-temporal"
+    def documentation = "https://github.com/blemoine/java8-temporal-grails-plugin"
 
     def license = "APACHE"
 
-    //TODO branche issues on github
-//    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
-    //TODO branche github
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+   def issueManagement = [ system: "GitHub", url: "https://github.com/blemoine/java8-temporal-grails-plugin/issues" ]
+
+    def scm = [ url: "https://github.com/blemoine/java8-temporal-grails-plugin" ]
 
     def doWithWebDescriptor = { xml ->
-        // TODO Implement additions to web.xml (optional), this event occurs before
+
     }
 
     def doWithSpring = {
@@ -64,9 +63,7 @@ Plugin for supporting the new Java 8 Date and Temporal API :
     }
 
     def doWithDynamicMethods = { ctx ->
-
         TemporalMarshallersRegisterer.registerMarshallers()
-
     }
 
     def doWithApplicationContext = { ctx ->

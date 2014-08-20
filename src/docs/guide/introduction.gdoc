@@ -8,8 +8,10 @@ h3. 0.1
 
 * Initial release
 
-h2. Contact
+h2. Raise a bug
 
-//TODO  contact me
-//TODO raise bug
-//TODO source code url
+You could use the github bug tracker to raise bug: https://github.com/blemoine/java8-temporal-grails-plugin/issues
+
+h2. Source code
+
+The source code can be found on this url: https://github.com/blemoine/java8-temporal-grails-plugin
