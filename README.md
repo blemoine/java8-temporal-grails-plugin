@@ -1,11 +1,12 @@
 Java8 Temporal Grails Plugin
 ============================
-The Java 8 temporal Plugin integrates the new DateTime API (Instant, LocalDate, LocalTime, etc.) of Java 8 with grails.
+The Java 8 temporal Plugin integrates the new DateTime API (Instant, LocalDate, LocalTime, etc.) of Java 8 within Grails.
 
-This plugin is compatible with grails 2.4.x, the first version of grails supporting the jdk8
+This plugin is compatible with grails 2.4.x, the first version of Grails supporting the JDK8.
 
 * Provides the ability to bind inputs to Java 8 Temporal.
-* Supports JSON and XML rendering of Java 8 types.
+* Supports JSON and XML rendering of Java 8 Temporal types.
+* Add a dependency to help persisting Java 8 Temporal.
 
 How to install
 --------------
