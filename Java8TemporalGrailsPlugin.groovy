@@ -23,7 +23,7 @@ class Java8TemporalGrailsPlugin {
     def author = "Benoit Lemoine"
     def authorEmail = "lemoine.benoit@gmail.com"
     def description = '''\
-Plugin for supporting the new Java 8 Date and Temporal API :
+Plugin for supporting the new Java 8 Date and Temporal API:
    *  Support of DataBinding
    *  Support in Gorm
    *  Support of marshalling in JSON and XML
