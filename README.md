@@ -50,14 +50,16 @@ Persistence
 
 The compatibility of Gorm with Java8 Temporals is assured by the [Jadira User Type project](http://jadira.sourceforge.net/usertype.extended/index.html).
 
-h3. Adding the type in your domain classes
+Adding the type in your domain classes
+--------------------------------------
+--------------------------------------
 
 You can specify in your domain classes how to persist the temporal classes in the mapping block.
 
 eg.
 
 
-{code}
+```
 import java.time.*
 import org.jadira.usertype.dateandtime.threeten.*
 
@@ -68,9 +70,11 @@ class Person {
     	birthdate type: PersistentLocalDate
     }
 }
-{code}
+```
 
-h3. Adding default type mapping
+Adding default type mapping
+--------------------------------------
+--------------------------------------
 
 To avoid writing manually the mapping for every single domain classes, you could declare default mapping for temporal classes
 in your @Config.groovy@ file.
@@ -78,7 +82,7 @@ in your @Config.groovy@ file.
 eg.
 
 
-{code}
+```
 grails.gorm.default.mapping = {
     "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentLocalDate, class: java.time.LocalDate
     "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentLocalTime, class: java.time.LocalTime
@@ -89,10 +93,10 @@ grails.gorm.default.mapping = {
 
     // ...
 }
-{code}
+```
 
-
-h2. Acknowledgement
+Acknowledgement
+---------------
 
 Thanks to [Grails Joda-Time plugin Team](https://github.com/gpc/grails-joda-time/), which is the main inspiration source
 for this plugin.
