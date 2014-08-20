@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter
 
 class Java8TemporalGrailsPlugin {
 
-    def version = "0.1"
+    def version = "0.1-SNAPSHOT"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.4 > *"
 
@@ -26,6 +26,7 @@ class Java8TemporalGrailsPlugin {
 Plugin for supporting the new Java 8 Date and Temporal API :
    *  Support of DataBinding
    *  Support in Gorm
+   *  Support of marshalling in JSON and XML
 '''
 
     // URL to the plugin's documentation
@@ -63,10 +64,11 @@ Plugin for supporting the new Java 8 Date and Temporal API :
     }
 
     def doWithDynamicMethods = { ctx ->
-        TemporalMarshallersRegisterer.registerMarshallers()
+
     }
 
     def doWithApplicationContext = { ctx ->
+        TemporalMarshallersRegisterer.registerMarshallers()
     }
 
     def onChange = { event ->

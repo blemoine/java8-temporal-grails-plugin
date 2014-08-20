@@ -43,14 +43,3 @@ grails.project.dependency.resolution = {
         provided ":hibernate4:4.3.5.4"
     }
 }
-
-grails.gorm.default.mapping = {
-    "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentLocalDate, class: java.time.LocalDate
-    "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentLocalTime, class: java.time.LocalTime
-    "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentLocalDateTime, class: java.time.LocalDateTime
-    "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentInstantAsTimestamp, class: java.time.Instant
-    "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentYearAsString, class: java.time.Year
-    "user-type" type: org.jadira.usertype.dateandtime.threeten.PersistentYearMonthAsString, class: java.time.YearMonth
-
-
-}

@@ -1,6 +1,8 @@
 package ch.sachem_molo.grails.plugin.temporal.converters
 
 import groovy.transform.CompileStatic
+import org.apache.commons.logging.Log
+import org.apache.commons.logging.LogFactory
 import org.grails.databinding.converters.FormattedValueConverter
 
 import java.time.format.DateTimeFormatter
@@ -16,16 +18,16 @@ import java.time.temporal.Temporal
  *
  *
  * And, in the class where we want to use this converter, we should use the annotation:
- * @BindingFormat ( v a l u e = 'myFormat')
+ * @BindingFormat ( value = ' myFormat ' )
  *
  *
  *
  *
- * @param < T >  the target type of the converter
+ * @param < T > the target type of the converter
  */
 @CompileStatic
 class FormattedTemporalConverter<T extends Temporal> extends TemporalConverter<T> implements FormattedValueConverter {
-
+    private static final Log log = LogFactory.getLog(this)
     /**
      *
      * @param targetType the type that the convert should ouput. This type cannot be null,
@@ -36,6 +38,8 @@ class FormattedTemporalConverter<T extends Temporal> extends TemporalConverter<T
      */
     FormattedTemporalConverter(Class<T> targetType) {
         super(targetType)
+
+        log.debug "Registering a Formatted Value Converter for $targetType"
     }
 
     /**

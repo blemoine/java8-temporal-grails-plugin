@@ -11,7 +11,7 @@ import java.time.temporal.TemporalQuery
  * The main objective of this class is to provide a simple mean to convert
  * a String to the Temporal.
  *
- * @param < T >  a Temporal representing the output type of the converter
+ * @param < T > a Temporal representing the output type of the converter
  */
 @CompileStatic
 class TemporalConverter<T extends Temporal> {

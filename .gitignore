@@ -2,3 +2,6 @@
 .idea
 .DS_Store
 target
+plugin.xml
+grails*.zip
+grails*.zip.sha1

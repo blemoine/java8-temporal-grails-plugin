@@ -1,6 +1,8 @@
 package ch.sachem_molo.grails.plugin.temporal.converters
 
 import groovy.transform.CompileStatic
+import org.apache.commons.logging.Log
+import org.apache.commons.logging.LogFactory
 import org.grails.databinding.converters.ValueConverter
 
 import java.time.format.DateTimeFormatter
@@ -18,6 +20,8 @@ import java.time.temporal.Temporal
  */
 @CompileStatic
 class TemporalValueConverter<T extends Temporal> extends TemporalConverter<T> implements ValueConverter {
+
+    private static final Log log = LogFactory.getLog(this)
 
     private final DateTimeFormatter formatter
 
@@ -37,6 +41,8 @@ class TemporalValueConverter<T extends Temporal> extends TemporalConverter<T> im
 
         Objects.requireNonNull(formatter, 'The formatter should not be null')
         this.formatter = formatter
+
+        log.debug "Registering a Value Converter for $targetType with formatter $formatter"
     }
 
     /**
