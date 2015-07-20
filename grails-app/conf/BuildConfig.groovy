@@ -29,17 +29,16 @@ grails.project.dependency.resolution = {
 
     }
     dependencies {
-        compile 'org.jadira.usertype:usertype.extended:3.2.0.GA'
+        compile 'org.jadira.usertype:usertype.extended:4.0.0.GA'
     }
 
     plugins {
 
-
-        build(":release:3.0.1", ':rest-client-builder:1.0.3') {
+        build(":release:3.1.1", ':rest-client-builder:2.1.1') {
             export = false
         }
 
 
-        provided ":hibernate4:4.3.5.4"
+        provided ":hibernate4:4.3.8.1"
     }
 }
