@@ -12,7 +12,7 @@ class Java8TemporalGrailsPlugin {
 
     def version = "0.2"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "2.4 > *"
+    def grailsVersion = "2.5 > *"
 
     def pluginExcludes = [
             "grails-app/views/error.gsp"
